@@ -8,16 +8,20 @@ makeCacheMatrix <- function(x = matrix()) {
 ## Holds the cache value or if nothing is cached
         cache <- NULL
 ##seting matrix
+## building matrix --set--
         set <- function(y) {
                 x <<- y
                 cache <<- NULL
         }
+## building matrix --get--
         get <- function() {
                 x
         }
+## building matrix --cacheInv--        
         cacheInv <- function(solve) {
                 cache <<- solve
         }
+## building matrix --getInv--        
         getInv <- function() {
                 cache
         }

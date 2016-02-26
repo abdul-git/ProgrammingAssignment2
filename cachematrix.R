@@ -33,6 +33,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## Write a short comment describing this function
 
 ## following function calculates the inverse of matrix created above "makeCacheMatrix"
+## create function cacheSolve
 cacheSolve <- function(y, ...) {
 ## get cache value if it is in cache
         inverse <- y$getInv()
